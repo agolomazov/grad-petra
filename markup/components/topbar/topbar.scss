@@ -1,0 +1,61 @@
+.topbar {
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-family: CoreSansA65Bold, sans-serif;
+    //width: 100%;
+    //z-index: 2;
+    //padding-bottom: 20px;
+    //position: absolute;
+}
+.topbar__phone  {
+    padding: 10px;
+    line-height: 20px;
+    text-decoration: none;
+    float: left;
+    font-size: 20px;
+}
+
+.topbar__social, .topbar__mail {
+    float: left;
+    padding: 8px;
+    line-height: 23px;
+}
+
+.sprite {
+    @include bg($spritesheet);
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.sprite-facebook {
+    width: 23px;
+    height: 23px;
+    background-position: -5px -5px;
+}
+
+.sprite-instagram {
+    width: 24px;
+    height: 24px;
+    background-position: -38px -5px;
+}
+
+.sprite-mail {
+    width: 28px;
+    height: 21px;
+    background-position: -72px -5px;
+}
+
+.sprite-vk {
+    width: 23px;
+    height: 24px;
+    background-position: -110px -5px;
+}
+
+.sprite-whatsapp {
+    width: 23px;
+    height: 23px;
+    background-position: -143px -5px;
+}
