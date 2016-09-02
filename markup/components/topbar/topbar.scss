@@ -7,6 +7,11 @@
     //padding-bottom: 20px;
     //position: absolute;
 }
+.topbar__link, .topbar__link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
 .topbar__phone  {
     padding: 10px;
     line-height: 20px;
