@@ -1,87 +1,121 @@
 .content-statue {
   background: url('%=static=%assets/content-statue/bg-statue-block.png') no-repeat;
-  background-size: cover;
-  position: relative;
+
 }
 
 .content-statue:before {
+  content: "";
   display: block;
-  height: 100px;
-  background: url('%=static=%assets/content-statue/top-border.png') repeat-x;
+  clear: both;
+  background: url('%=static=%assets/content-statue/top-border.png') no-repeat;
   width: 100%;
-  content: " ";
-  z-index: 10;
+  height: 100px;
 }
 
-.content-statue .container:before, .content-statue .container:after {
-  content: " ";
-  background: url('%=static=%assets/content-statue/left-statue.png') no-repeat;
+.main-content {
+  max-width: 1440px;
+  min-width: 480px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.main-content:before {
+  display: block;
+  content: "";
   width: 233px;
   height: 1008px;
-  display: block;
+  background: url('%=static=%assets/content-statue/left-statue.png') no-repeat;
   position: absolute;
-  top: 40px;
+  top: -70px;
+  left: 0px;
 }
 
-.content-statue .container:before {
-  left: 140px;
-}
-
-.content-statue .container:after {
+.main-content:after {
+  display: block;
+  content: "";
+  width: 233px;
+  height: 1008px;
   background: url('%=static=%assets/content-statue/right-statue.png') no-repeat;
-  right: 140px;
-}
-.content-statue .container.main-content{
-  padding: 140px 130px;
-}
-
-.ih-item {
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  overflow: hidden;
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto;
-}
-
-.ih-item .info {
   position: absolute;
-  width: 200px;
-  height: 200px;
-  top: 30px;
-  left: 30px;
-  z-index: 10;
-  border: 20px solid transparent;
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 50%;
-  text-align: center;
+  top: -70px;
+  right: 0px;
 }
 
-.ih-item .img {
-  z-index: 5;
+.service-list__wrapper {
+  padding: 140px 200px;
+  overflow: hidden;
 }
 
-.ih-item .info h3 {
-  margin: 0;
+.services-list {
+  margin: 0 50px 0 90px;
   padding: 0;
-  visibility: visible;
-  color: #fff;
-  font-size: 20px;
-  text-transform: uppercase;
-  position: relative;
-  font-weight: normal;
-  top: 65px;
-  font-family: 'CoreSansA65Bold', sans-serif;
+  overflow: hidden;
+  width: 90%;
 }
 
-.ih-item a:before {
-  content: " ";
+.services-list__item {
+  float: left;
+  list-style: none;
+  display: block;
   width: 260px;
   height: 260px;
+  margin: 0 50px 70px 0;
+  position: relative;
+}
+
+.services-list__img {
+  max-width: 260px;
+  max-height: 260px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+
+  -webkit-transition: -webkit-filter 0.5s ease-in-out;
+  -moz-transition: -moz-filter 0.5s ease-in-out;
+  -ms-transition: -ms-filter 0.5s ease-in-out;
+  -o-transition: -o-filter 0.5s ease-in-out;
+  transition: filter 0.5s ease-in-out;
+}
+
+.services-list__link:hover .services-list__img {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.services-list__link:hover .services-list__item-title{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.services-list__link {
+  text-decoration: none;
+}
+
+.services-list__item-title {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 220px;
+  height: 130px;
+  border-radius: 50%;
   position: absolute;
-  display: block;
-  background-color: rgba(68, 68, 68, 0.7);
+  top: 20px;
+  left: 20px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 22px;
+  font-family: 'CoreSansA65Bold';
+  font-weight: normal;
+  padding: 90px 0px 0px 0px;
+
 
   -webkit-transition: background-color 0.5s ease-in-out;
   -moz-transition: background-color 0.5s ease-in-out;
@@ -90,15 +124,8 @@
   transition: background-color 0.5s ease-in-out;
 }
 
-.ih-item a:hover:before {
-  background-color: transparent;
-}
-
-.content-statue .container.main-content {
-  margin: 0 0 140px 385px;
-  padding-top: 140px;
-}
-
-.mb50{
-  margin-bottom: 75px;
+@media all and (min-width: 1281px) and (max-width: 1440px) {
+  .service-list__wrapper {
+    max-width: 1000px;
+  }
 }
