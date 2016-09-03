@@ -79,7 +79,7 @@
   padding: 3px 0;
 }
 
-.dropdown-parent:before{
+.dropdown-parent:hover:before{
   content: "";
   width: 0;
   height: 0;
@@ -89,7 +89,7 @@
   position: absolute;
   bottom: -7px;
   z-index: 10;
-  left: 55px;
+  left: 45%;
 }
 
 .menu__link{
