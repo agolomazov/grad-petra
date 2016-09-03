@@ -181,7 +181,7 @@
 
 @media all and (max-width: 1090px){
   .services-list {
-    margin: 0 50px 0 70px;
+    margin: 0 50px 0 90px;
   }
 }
 
@@ -206,7 +206,7 @@
     min-height: auto;
   }
 
-  .main-content:after, .main-content:before{
+  .main-content:after, .main-content:before, .content-statue:before{
     display: none;
   }
 
@@ -293,8 +293,22 @@
   .services-list__item {
     margin: 0 9% 50px 0;
   }
+}
 
+@media all and (min-width: 481px) and (max-width: 599px){
+  .services-list__item{
+    width: 150px;
+    height: 150px;
+  }
 
+  .services-list__item-title {
+    width: 130px;
+    height: 70px;
+    padding: 55px 0px 0px 0px;
+    top: 13px;
+    left: 10px;
+    font-size: 16px;
+  }
 }
 
 @media all and (min-width: 320px) and (max-width: 480px){

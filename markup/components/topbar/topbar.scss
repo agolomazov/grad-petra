@@ -1,52 +1,138 @@
 .topbar {
-    height: 30px;
-    width: 100%;
-    background-color: rgba(255,255,255, 0.8);
-}
-.social__list {
-    list-style: none;
-}
-.social__item {
-    float: left;
+  background: rgba(255, 255, 255, .7);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
 }
 
-// Sprites
+.topbar-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+.phone-topbar__link {
+  color: #000000;
+  font-family: 'CoreSansA65Bold';
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social__item {
+  list-style: none;
+}
+
+.topbar__mail {
+  display: block;
+  width: 10%;
+  float: left;
+  padding: 0 0 0 50px;
+}
+
+.topbar__social {
+  float: right;
+  display: block;
+  width: 50%;
+}
+
+.phone-topbar {
+  display: block;
+  float: left;
+  width: 40%;
+}
+
+.social__list {
+  display: block;
+  float: right;
+  width: 40%;
+  margin: 0;
+  padding: 0;
+}
 
 .sprite {
-    @include bg($spritesheet);
-    background-repeat: no-repeat;
-    display: block;
-    float: left;
-    margin-left: 2px;
-    margin-right: 2px;
+  @include bg($spritesheet);
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
 .sprite-facebook {
-    width: 23px;
-    height: 23px;
-    background-position: -5px -5px;
+  width: 23px;
+  height: 23px;
+  background-position: -5px -5px;
 }
 
 .sprite-instagram {
-    width: 24px;
-    height: 24px;
-    background-position: -38px -5px;
+  width: 24px;
+  height: 24px;
+  background-position: -38px -5px;
 }
 
 .sprite-mail {
-    width: 28px;
-    height: 21px;
-    background-position: -72px -5px;
+  width: 28px;
+  height: 21px;
+  background-position: -72px -5px;
 }
 
 .sprite-vk {
-    width: 23px;
-    height: 24px;
-    background-position: -110px -5px;
+  width: 23px;
+  height: 24px;
+  background-position: -110px -5px;
 }
 
 .sprite-whatsapp {
-    width: 23px;
-    height: 23px;
-    background-position: -143px -5px;
+  width: 23px;
+  height: 23px;
+  background-position: -143px -5px;
+}
+
+@media all and (max-width: 640px) {
+  .topbar__social {
+    width: 60%;
+  }
+
+  .phone-topbar {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .phone-topbar {
+    width: 55%;
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 590px){
+  .phone-topbar {
+    width: 50%;
+  }
+
+  .phone-topbar__link{
+    font-size: 18px;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 480px) {
+  .topbar-wrapper {
+    padding: 30px 0;
+  }
+
+  .topbar__mail {
+    padding: 20px 0 0 30px;
+  }
+
+  .phone-topbar {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .social__list {
+    display: block;
+    width: 100%;
+  }
 }
