@@ -4,6 +4,46 @@
     display: block;
 }
 
+.owl-carousel:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 60px;
+    background-color: rgba(255,255,255, 0.8);
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    //z-index: 5;
+}
+
+
+
+.carousel__wrapper {
+    width: 1280px;
+    margin: auto;
+    position: absolute;
+    top: 40%;
+    color: white;
+    left: 0;
+    right: 0;
+    width: 1280px;
+}
+
+.carousel__content {
+    margin-left: 15%;
+}
+
+.carousel__description {
+    font-size: 35px;
+    font-family: 'FiraSans-Regular', sans-serif;
+}
+
+.carousel__title {
+    font-size: 90px;
+    font-family: 'FiraSans-Medium', sans-serif;
+}
+
+
 /*
  * 	Core Owl Carousel CSS File
  *	v1.3.3
@@ -65,7 +105,7 @@
 
 .owl-pagination {
     position: absolute;
-    bottom: 10px;
+    bottom: 80px;
     left: 0;
     right: 0;
 }

@@ -7,13 +7,15 @@
 
     <body class="page">
         %=symbols=%
-
+        <header class="page__header">
+            {{> topbar/topbar}}
+            {{> navbar/navbar}}
+        </header>
         <section class="page__wrapper">
 
             <!-- Include your modules here -->
             <div class="header">
-                {{> topbar/topbar}}
-                {{> navbar/navbar}}
+
             </div>
             {{> carousel/carousel}}
             {{> content-statue/content-statue  }}
