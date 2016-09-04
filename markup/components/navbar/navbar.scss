@@ -3,6 +3,15 @@
   margin: 0;
   padding: 0;
   width: 100%;
+  clear: both;
+}
+
+.navbar:before, .navbar:after{
+  content: " ";
+  display: table;
+  width: 1px;
+  height: 1px;
+  clear: both;
 }
 
 .navbar-wrapper {
@@ -107,4 +116,145 @@
 
 .dropdown-menu .menu__item {
   float: left;
+}
+
+@media all and (max-width: 1180px){
+
+  .navbar-wrapper{
+    overflow: hidden;
+  }
+
+  .logo-wrapper {
+    display: block;
+    float: none;
+    clear: both;
+    width: 100%;
+  }
+
+  .logo{
+    text-align: center;
+    padding: 40px 0 30px;
+  }
+
+  .navigation{
+    width: 100%;
+    clear: both;
+    float: none;
+  }
+
+  .top-menu{
+    width: 70%;
+    margin: 0 auto 20px;
+    overflow: hidden;
+  }
+
+  .top-menu__link{
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .dropdown-parent:hover .dropdown-menu{
+     width: 83%;
+  }
+}
+
+@media all and (max-width: 1090px){
+
+  .top-menu{
+    width: 65%;
+    margin: 0 auto 20px;
+    overflow: hidden;
+  }
+
+  .top-menu__item{
+    font-size: 14px;
+    margin-right: 20px;
+  }
+}
+
+@media all and (max-width: 990px){
+  .top-menu{
+    width: 70%;
+  }
+}
+
+@media all and (max-width: 929px){
+  .top-menu {
+    width: 45%;
+  }
+
+  .top-menu__item{
+    display: block;
+    float: none;
+    font-size: 16px;
+    padding: 5px 0;
+  }
+
+  .top-menu__link{
+    text-align: left;
+    display: inline;
+  }
+
+  .dropdown-menu{
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .dropdown-menu .menu__item{
+    float: none;
+    display: block;
+    text-indent: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  .dropdown-menu-wrapper{
+    display: none;
+    position: relative;
+    text-transform: uppercase;
+    padding: 15px 0;
+    margin: 10px 0;
+  }
+
+  .dropdown-parent:before, .dropdown-parent:after{
+    content: "";
+    border: none;
+    width: 32px;
+    height: 32px;
+    display: block;
+    background: url("%=static=%assets/navbar/menu_bar_.png") no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+
+  .menu__link{
+    display: block;
+    color: #666;
+    width: 100%;
+  }
+
+  .menu__link:hover{
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .top-menu__item:hover .dropdown-menu{
+     float: none;
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 590px){
+  .top-menu{
+    width: 60%;
+  }
+}
+
+@media all  and (min-width: 320px) and (max-width: 480px){
+  .top-menu{
+    width: 80%;
+  }
 }
