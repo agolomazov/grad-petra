@@ -11,8 +11,11 @@
         <section class="page__wrapper">
 
             <!-- Include your modules here -->
-            {{> topbar/topbar}}
-            {{> navbar/navbar}}
+            <div class="header">
+                {{> topbar/topbar}}
+                {{> navbar/navbar}}
+            </div>
+            {{> carousel/carousel}}
             {{> content-statue/content-statue  }}
 
             <div class="page__buffer"></div>
