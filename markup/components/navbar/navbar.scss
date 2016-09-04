@@ -180,7 +180,7 @@
 
 @media all and (max-width: 929px){
   .top-menu {
-    width: 45%;
+    width: 60%;
   }
 
   .top-menu__item{
@@ -247,14 +247,8 @@
   }
 }
 
-@media all and (min-width: 481px) and (max-width: 590px){
+@media all and (max-width: 590px){
   .top-menu{
-    width: 60%;
-  }
-}
-
-@media all  and (min-width: 320px) and (max-width: 480px){
-  .top-menu{
-    width: 80%;
+    width: 90%;
   }
 }
