@@ -4,7 +4,7 @@ $(document).ready(function () {
         slideSpeed: 300,
         paginationSpeed: 400,
         singleItem: true,
-        autoPlay: true,
+        // autoPlay: true,
         autoWidth: true
         // "singleItem:true" is a shortcut for:
         // items : 1,

@@ -26,18 +26,18 @@ html, body {
     width: 1280px;
     margin: 0 auto;
 }
-.header {
+.page__header {
     position: absolute;
     top: 0;
     z-index: 3;
     width: 100%;
 }
 
-@media all and (max-width: 600px){
+@media all and (max-width: 929px){
     .carousel {
         display: none;
     }
-    .header {
+    .page__header {
         position: relative;
     }
 }
