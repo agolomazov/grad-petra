@@ -1,0 +1,22 @@
+.copyrights {
+  background: #000000;
+  color: #ffffff;
+  padding: 15px 0;
+}
+
+.copyrights-wrapper {
+  max-width: 1280px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.copyrights-text {
+  text-indent: 65px;
+}
+
+@media all and (max-width: 720px){
+  .copyrights-text {
+    text-align: center;
+    text-indent: 0;
+  }
+}
