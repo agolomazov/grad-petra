@@ -1,0 +1,41 @@
+.gallery{
+  width: 100%;
+  min-height: 972px;
+  background: url('%=static=%assets/gallery/gallery-background.jpg') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.gallery-wrapper{
+  padding: 30px;
+  max-width: 1280px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 149px 0 0 0;
+}
+
+.gallery-content{
+  background: rgba(255, 255, 255, .8);
+  padding: 120px 60px;
+}
+
+.gallery__page-title{
+  font-family: 'CoreSansA65Bold';
+  font-size: 30px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  position: relative;
+}
+
+.gallery__page-title:after{
+  content: " ";
+  display: block;
+  width: 4%;
+  height: 2px;
+  background: #009fe3;
+  position: absolute;
+  bottom: -10px;
+  left: 48%;
+}
