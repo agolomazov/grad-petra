@@ -6,13 +6,19 @@
   color: #ffffff;
 }
 
-
-
 .news-list-wrapper {
-  padding: 60px 0px;
-  max-width: 1200px;
+  padding: 60px 0px 30px;
+  max-width: 1280px;
   min-width: 300px;
   margin: 0 auto;
+}
+
+.news-list__item:hover{
+  background: rgba(153, 204, 255, .2);
+}
+
+.news-list__item-wrapper{
+  padding: 0 15px;
 }
 
 .news-list__title {
