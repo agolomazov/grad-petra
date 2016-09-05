@@ -124,13 +124,17 @@
   bottom: 0;
   z-index: 5;
 
-  -webkit-transition: height 0.5s ease-in-out;
-  -moz-transition: height 0.5s ease-in-out;
-  -ms-transition: height 0.5s ease-in-out;
-  -o-transition: height 0.5s ease-in-out;
-  transition: height 0.5s ease-in-out;
+  -webkit-transition: height 0.3s ease-in-out;
+  -moz-transition: height 0.3s ease-in-out;
+  -ms-transition: height 0.3s ease-in-out;
+  -o-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
 }
 
 .gallery__item-image:hover .gallery__item-link:after{
   height: 100%;
+}
+
+#gallery__items-list .gallery__item-image{
+  display: none;
 }
