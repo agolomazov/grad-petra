@@ -1,7 +1,7 @@
 .bottom-menu {
   max-width: 1280px;
   min-width: 320px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
 }
 
 .menu {
@@ -45,7 +45,7 @@
 
 @media all and (min-width: 600px) and (max-width: 800px){
   .menu {
-    width: 60%;
+    width: 80%;
   }
 }
 
@@ -56,6 +56,12 @@
 }
 
 @media all and (min-width: 320px) and (max-width: 480px) {
+
+  .bottom-menu {
+    margin: 0 auto 20px;
+  }
+
+
   .menu__item {
     display: block;
     float: none;

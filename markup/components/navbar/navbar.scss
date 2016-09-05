@@ -245,6 +245,10 @@
   .top-menu__item:hover .dropdown-menu{
      float: none;
   }
+
+  .dropdown-parent:hover .dropdown-menu {
+    width: 90%;
+  }
 }
 
 @media all and (max-width: 590px){
