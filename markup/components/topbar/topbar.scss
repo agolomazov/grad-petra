@@ -37,13 +37,15 @@
 .topbar__social {
   float: right;
   display: block;
-  width: 50%;
+  width: 45%;
 }
 
 .phone-topbar {
   display: block;
-  float: left;
+  float: right;
   width: 40%;
+  margin-right: 50px;
+  text-align: right;
 }
 
 .social__list {
@@ -93,9 +95,33 @@
   background-position: -143px -5px;
 }
 
+@media all and (max-width: 995px) {
+  .topbar__social{
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .topbar__social{
+    width: 55%;
+  }
+}
+
 @media all and (max-width: 800px) {
   .phone-topbar {
-    width: 55%;
+    width: 70%;
+    margin-right: 30px;
+  }
+
+  .topbar__mail {
+    display: block;
+    width: 10%;
+    float: left;
+    padding: 25px 0 0 50px;
+  }
+
+  .social__list {
+    margin: 0 0 15px;
   }
 }
 
@@ -107,10 +133,6 @@
 
   .topbar__social {
     width: 60%;
-  }
-
-  .phone-topbar {
-    width: 50%;
   }
 }
 
@@ -143,6 +165,9 @@
 
   .social__list {
     display: block;
-    width: 100%;
+    width: 73%;
+    margin: 0 0 15px;
+    padding: 0;
+    float: right;
   }
 }
