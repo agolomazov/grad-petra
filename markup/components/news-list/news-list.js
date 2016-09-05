@@ -10,7 +10,7 @@ $(document).ready(function () {
         $('.news-list__item-title').equalize();
     }
 
-    $( window ).resize(function(){
+    $(window).resize(function () {
         if (windowWidth > 800) {
             $('.list-posts').equalize({
                 target: '.news-list__item'
