@@ -47,14 +47,14 @@
   font-weight: bold;
   font-family: 'clear_sansregular';
   overflow: hidden;
-  margin: 0 auto 50px;
+  margin: 0 auto 35px;
   padding: 0;
   width: 85%;
   position: relative;
 
   .filter{
     float: left;
-    margin: 0 20px;
+    margin: 0 20px 15px;
 
     &:hover{
       color: #999999;
@@ -135,6 +135,65 @@
   height: 100%;
 }
 
+
 #gallery__items-list .gallery__item-image{
   display: none;
+}
+
+.img.gallery__item-img{
+  max-width: 100%;
+}
+
+
+@media all and (max-width: 1280px){
+  .gallery-content {
+    padding: 120px 40px;
+  }
+}
+
+@media all and (max-width: 960px){
+  .gallery__item-image {
+    max-width: 230px;
+  }
+}
+
+@media all and (max-width: 920px){
+  .gallery-content {
+    padding: 120px 10px;
+  }
+}
+
+@media all and (max-width: 900px){
+  .gallery-content {
+    padding: 50px 10px;
+  }
+
+  .filter-list {
+    margin: 0 auto 15px;
+  }
+
+  .gallery__item-image {
+    max-width: 320px;
+  }
+}
+
+@media all and (max-width: 767px){
+
+  .gallery__item-image {
+    max-width: 250px;
+  }
+}
+
+@media all and (max-width: 630px){
+  .gallery__item-image {
+    max-width: 360px;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 480px){
+  .gallery__items-list{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
 }

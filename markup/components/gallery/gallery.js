@@ -6,7 +6,7 @@ $(document).ready(function () {
         },
         animation: {
             enable: true,
-            effects: 'fade scale',
+            effects: 'fade stagger(50ms)',
             duration: 600,
             easing: 'ease',
         },
