@@ -24,7 +24,7 @@
   font-size: 30px;
   text-align: center;
   padding: 0;
-  margin: 0;
+  margin: 0 0 65px 0;
   font-weight: normal;
   position: relative;
 }
@@ -36,6 +36,101 @@
   height: 2px;
   background: #009fe3;
   position: absolute;
-  bottom: -10px;
+  bottom: -35px;
   left: 48%;
+}
+
+.filter-list{
+  font-size: 14px;
+  color: #010101;
+  list-style: none;
+  font-weight: bold;
+  font-family: 'clear_sansregular';
+  overflow: hidden;
+  margin: 0 auto 50px;
+  padding: 0;
+  width: 85%;
+  position: relative;
+
+  .filter{
+    float: left;
+    margin: 0 20px;
+
+    &:hover{
+      color: #999999;
+      cursor: pointer;
+    }
+  }
+
+  .filter-all{
+    text-indent: 10px;
+
+    &:after{
+      background: url('%=static=%assets/gallery/spritesheet-filter.png') no-repeat;
+      content: '';
+      display: block;
+      width: 17px;
+      height: 12px;
+      background-position: -5px -5px;
+      position: absolute;
+      top: 3px;
+      left: 0;
+    }
+
+    &:hover:after{
+      background-position: -32px -5px;
+    }
+  }
+
+}
+
+.gallery-items{
+  overflow: hidden;
+  width: 100%;
+}
+
+.gallery__item-image{
+  float: left;
+  max-width: 250px;
+  overflow: hidden;
+  margin: 0 25px 25px 0;
+  position: relative;
+}
+
+.gallery__item-link{
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.gallery__item-desc{
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  z-index: 10;
+  width: 100%;
+  text-align: right;
+  font-size: 13px;
+}
+
+.gallery__item-link:after{
+  background: rgba(0, 0, 0, .6);
+  height: 30%;
+  width: 100%;
+  position: absolute;
+  display: block;
+  content: '';
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+
+  -webkit-transition: height 0.5s ease-in-out;
+  -moz-transition: height 0.5s ease-in-out;
+  -ms-transition: height 0.5s ease-in-out;
+  -o-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+}
+
+.gallery__item-image:hover .gallery__item-link:after{
+  height: 100%;
 }
