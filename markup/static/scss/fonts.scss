@@ -4,10 +4,10 @@
 
 @font-face {
     font-family: 'CustomFont';
-    src: url('../fonts/../fonts/Custom-Font.eot');
-    src: url('../fonts/../fonts/Custom-Font.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/../fonts/Custom-Font.woff') format('woff'),
-         url('../fonts/../fonts/Custom-Font.svg#custom_font') format('svg');
+    src: url('../fonts/Custom-Font.eot');
+    src: url('../fonts/Custom-Font.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Custom-Font.woff') format('woff'),
+         url('../fonts/Custom-Font.svg#custom_font') format('svg');
     font-weight: 400;       // For normal width. It could has another value
     font-style: normal;     // Also could has another value
     }
@@ -21,26 +21,26 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 
 @font-face {
     font-family: 'clear_sansregular';
-    src: url('../fonts/../fonts/ClearSans-Regular-webfont.eot');
-    src: url('../fonts/../fonts/ClearSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/../fonts/ClearSans-Regular-webfont.woff') format('woff'),
-    url('../fonts/../fonts/ClearSans-Regular-webfont.ttf') format('truetype'),
-    url('../fonts/../fonts/ClearSans-Regular-webfont.svg#clear_sansregular') format('svg');
+    src: url('../fonts/ClearSans-Regular-webfont.eot');
+    src: url('../fonts/ClearSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ClearSans-Regular-webfont.woff') format('woff'),
+    url('../fonts/ClearSans-Regular-webfont.ttf') format('truetype'),
+    url('../fonts/ClearSans-Regular-webfont.svg#clear_sansregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'CoreSansA65Bold';
-    src: url('../fonts/../fonts/CoreSansA65Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/../fonts/CoreSansA65Bold.otf')  format('opentype'),
-    url('../fonts/../fonts/CoreSansA65Bold.woff') format('woff'), url('../fonts/../fonts/CoreSansA65Bold.ttf')  format('truetype'), url('../fonts/../fonts/CoreSansA65Bold.svg#CoreSansA65Bold') format('svg');
+    src: url('../fonts/CoreSansA65Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/CoreSansA65Bold.otf')  format('opentype'),
+    url('../fonts/CoreSansA65Bold.woff') format('woff'), url('../fonts/CoreSansA65Bold.ttf')  format('truetype'), url('../fonts/CoreSansA65Bold.svg#CoreSansA65Bold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'FiraSans-Regular';
-    src: url('../fonts/../fonts/FiraSans-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/../fonts/FiraSans-Regular.woff') format('woff'), url('../fonts/../fonts/FiraSans-Regular.ttf')  format('truetype'), url('../fonts/../fonts/FiraSans-Regular.svg#FiraSans-Regular') format('svg');
+    src: url('../fonts/FiraSans-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/FiraSans-Regular.woff') format('woff'), url('../fonts/FiraSans-Regular.ttf')  format('truetype'), url('../fonts/FiraSans-Regular.svg#FiraSans-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -48,6 +48,37 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 @font-face {
     font-family: 'FiraSans-Medium';
     src: url('../fonts/FiraSans-Medium.eot?#iefix') format('embedded-opentype'),  url('../fonts/FiraSans-Medium.woff') format('woff'), url('../fonts/FiraSans-Medium.ttf')  format('truetype'), url('../fonts/FiraSans-Medium.svg#FiraSans-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'FiraSans-Bold';
+    src: url('../fonts/FiraSans-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/FiraSans-Bold.woff') format('woff'), url('../fonts/FiraSans-Bold.ttf')  format('truetype'), url('../fonts/FiraSans-Bold.svg#FiraSans-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FiraSans-Italic';
+    src: url('../fonts/FiraSans-Italic.eot?#iefix') format('embedded-opentype'),  url('../fonts/FiraSans-Italic.woff') format('woff'), url('../fonts/FiraSans-Italic.ttf')  format('truetype'), url('../fonts/FiraSans-Italic.svg#FiraSans-Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'ClearSans-Italic';
+    src: url('../fonts/ClearSans-Italic.eot?#iefix') format('embedded-opentype'),  url('../fonts/ClearSans-Italic.woff') format('woff'), url('../fonts/ClearSans-Italic.ttf')  format('truetype'), url('../fonts/ClearSans-Italic.svg#ClearSans-Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'ClearSans-Bold';
+    src: url('../fonts/ClearSans-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/ClearSans-Bold.woff') format('woff'), url('../fonts/ClearSans-Bold.ttf')  format('truetype'), url('../fonts/ClearSans-Bold.svg#ClearSans-Bold') format('svg');
     font-weight: normal;
     font-style: normal;
 }
