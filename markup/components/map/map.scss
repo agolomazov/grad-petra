@@ -1,0 +1,32 @@
+.map {
+
+}
+.map__wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+.map__contact {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    z-index: 1;
+    background-color: #fff;
+    padding: 30px 65px;
+}
+.map__title {
+    font-size: 22px;
+    margin-top: 0;
+    font-family: FiraSans-Bold, sans-serif;
+}
+.map__text {
+    font-size: 16px;
+    font-family: ClearSans, sans-serif;
+}
+.map__link {
+    text-decoration: none;
+    color: black;
+}
+.map__link:hover {
+    text-decoration: underline;
+}
