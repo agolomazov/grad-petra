@@ -2,7 +2,7 @@
   background: #ffffff;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 0 30px;
   position: relative;
 }
 
@@ -36,7 +36,7 @@
 .list-employeers__inner-wrapper {
   max-width: 690px;
   min-width: 320px;
-  padding: 60px 0;
+  padding: 60px 0 0;
   text-align: center;
   margin: 0 auto 100px;
 }
@@ -85,7 +85,16 @@
   font-weight: bold;
 }
 
+.about-us__contact-form-wrapper{
+  margin-bottom: 30px;
+}
+
 @media all and (max-width: 689px) {
+
+  .list-employeers{
+    padding: 0 0 20px;
+  }
+
   .employeer__item{
     width: 200px;
     display: block;
@@ -104,7 +113,13 @@
   }
 }
 
+
 @media all and (max-width: 620px) {
+
+  .list-employeers{
+    padding: 0 0 15px;
+  }
+
   .employeer__item{
     width: 200px;
     display: block;
@@ -114,6 +129,11 @@
 }
 
 @media all and (max-width: 575px){
+
+  .list-employeers{
+    padding: 0 0 10px;
+  }
+
   .list-employeers__header{
     margin-bottom: 15px;
   }
