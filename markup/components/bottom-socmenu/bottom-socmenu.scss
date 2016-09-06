@@ -84,9 +84,13 @@
   }
 }
 
-@media all and (min-width: 980px) and (max-width: 1280px){
+@media all and (min-width: 980px) and (max-width: 1281px){
   .bottom-socmenu__wrapper {
     width: 55%;
+  }
+
+  .right-menu .mail-link {
+    margin: 5px 25px 0px 0px;
   }
 }
 
