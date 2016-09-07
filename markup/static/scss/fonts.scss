@@ -19,16 +19,7 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 
 @import 'https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,700&subset=cyrillic';
 
-@font-face {
-    font-family: 'clear_sansregular';
-    src: url('../fonts/ClearSans-Regular-webfont.eot');
-    src: url('../fonts/ClearSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/ClearSans-Regular-webfont.woff') format('woff'),
-    url('../fonts/ClearSans-Regular-webfont.ttf') format('truetype'),
-    url('../fonts/ClearSans-Regular-webfont.svg#clear_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+
 
 @font-face {
     font-family: 'CoreSansA65Bold';
@@ -87,6 +78,30 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
 @font-face {
     font-family: 'ClearSans';
     src: url('../fonts/ClearSans.eot?#iefix') format('embedded-opentype'),  url('../fonts/ClearSans.woff') format('woff'), url('../fonts/ClearSans.ttf')  format('truetype'), url('../fonts/ClearSans.svg#ClearSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'PTSans-Regular';
+    src: url('../fonts/PTSans-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/PTSans-Regular.woff') format('woff'), url('../fonts/PTSans-Regular.ttf')  format('truetype'), url('../fonts/PTSans-Regular.svg#PTSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'PTSans-Bold';
+    src: url('../fonts/PTSans-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/PTSans-Bold.woff') format('woff'), url('../fonts/PTSans-Bold.ttf')  format('truetype'), url('../fonts/PTSans-Bold.svg#PTSans-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'PTSans-Italic';
+    src: url('../fonts/PTSans-Italic.eot?#iefix') format('embedded-opentype'),  url('../fonts/PTSans-Italic.woff') format('woff'), url('../fonts/PTSans-Italic.ttf')  format('truetype'), url('../fonts/PTSans-Italic.svg#PTSans-Italic') format('svg');
     font-weight: normal;
     font-style: normal;
 }
