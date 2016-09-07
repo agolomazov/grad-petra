@@ -82,3 +82,11 @@ $CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
 }
+
+
+@font-face {
+    font-family: 'ClearSans';
+    src: url('../fonts/ClearSans.eot?#iefix') format('embedded-opentype'),  url('../fonts/ClearSans.woff') format('woff'), url('../fonts/ClearSans.ttf')  format('truetype'), url('../fonts/ClearSans.svg#ClearSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
