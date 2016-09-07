@@ -1,39 +1,46 @@
 <div class="map">
     <div class="map__wrapper">
         <div class="map__contact">
-            <h1 class="map__title">Контактная информация</h1>
-            <p class="map__text">Санкт-Петербург, Невский проспект 22, этаж 4, офис 7</p>
-            <p class="map__text">Мы с радостью поможем вам подобрать экскурсии и <br> ответим на все ваши вопросы:</p>
-            <p class="map__text">тел.: <b>8 (812) 334-18-48</b> (Санкт-Петербург)<br>
+            <div class="map__title">Контактная информация</div>
+            <div class="map__text">Санкт-Петербург, Невский проспект 22, этаж 4, офис 7</div>
+            <div class="map__text">Мы с радостью поможем вам подобрать экскурсии и <br> ответим на все ваши вопросы:</div>
+            <div class="map__text">тел.: <b>8 (812) 334-18-48</b> (Санкт-Петербург)<br>
                 тел.: <b>8 (800) 333-70-48</b> (Россия, звонок бесплатный)
-            </p>
-            <p class="map__text">e-mail: <a href="mailto:admin@citycruises.ru" class="map__link">admin@citycruises.ru</a></p>
+            </div>
+            <div class="map__text">e-mail: <a href="mailto:admin@citycruises.ru" class="map__link">admin@citycruises.ru</a></div>
         </div>
     </div>
     <div id="map" style="width: 100%; height: 420px;">
 
     </div>
 </div>
-<!-- TODO: Переделать - черновой вариант -->
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script>
-    function initMap() {
-        var myLatLng = {lat: 59.9349607, lng: 30.3341774};
-        var markerPos= {lat: 59.9360129, lng: 30.32294 };
-        // Create a map object and specify the DOM element for display.
-        var map = new google.maps.Map(document.getElementById('map'), {
-            center: myLatLng,
-            scrollwheel: false,
-            zoom: 16
+    ymaps.ready(init);
+
+    function init(){
+
+        var myMap;
+
+        myMap = new ymaps.Map("map", {
+            center: [59.934870, 30.330452],
+            zoom: 16,
+            controls: []
         });
 
-        // Create a marker and set its position.
-        var marker = new google.maps.Marker({
-            map: map,
-            position: markerPos,
-            title: 'Град Петра'
-        });
+        myMap.behaviors.disable('scrollZoom');
+//        myMap.controls.add("zoomControl", {
+//            position: {top: 15, left: 15}
+//        });
+
+        var myPlacemark = new ymaps.Placemark([59.936106, 30.322974] , {},
+            { iconLayout: 'default#image',
+                iconImageHref: '/static/img/content/baloon.png',
+                iconImageSize: [30, 48],
+                iconImageOffset: [-20, -47] });
+        myMap.geoObjects.add(myPlacemark);
+
     }
 
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVRI8QCRXM85YB6tpMN_iO_bjLI0bLvT4&callback=initMap"
-        async defer></script>
+
