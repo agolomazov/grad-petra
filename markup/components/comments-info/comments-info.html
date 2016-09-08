@@ -1,1 +1,103 @@
+<div class="commnets">
+    <div class="comments__wrapper">
+        <!-- Заголовок страницы -->
+        <div class="comments__header">
+            <div class="comments__header-text">Оизывы</div>
+        </div>
 
+        <!-- Форма для оставления отзывов -->
+        <div class="comments__form-wrapper">
+            <div class="comments__form-inner-wrapper">
+                <form action="" class="comment-form" method="post" enctype="application/x-www-form-urlencoded">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <input type="text" class="form-input" name="name" placeholder="Ваше имя *">
+                        </div>
+
+                        <div class="form-field">
+                            <select name="theme" id="theme-select" class="form-select">
+                                <option value="1" class="form-select-option">Автопарк</option>
+                                <option value="2" class="form-select-option">Экскурсии</option>
+                                <option value="3" class="form-select-option">Бизнес-туры</option>
+                                <option value="4" class="form-select-option">VIP такси</option>
+                                <option value="5" class="form-select-option">Свадьбы</option>
+                                <option value="6" class="form-select-option">Пассажирские перевозки</option>
+                                <option value="7" class="form-select-option">Автопарк</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field-3">
+                            <label for="male" class="input-label">
+                                <input type="radio" name="sex" value="male" id="male"> M
+                            </label>
+
+                            <label for="female" class="input-label">
+                                <input checked="checked" type="radio" name="sex" value="female" id="female"> Ж
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field-2">
+                            <textarea name="comment" id="comment" cols="30" rows="10" class="form-textarea"
+                                      placeholder="Комментарий"></textarea>
+                        </div>
+
+                        <div class="form-field">
+                            <div class="pull-right">
+                                <button class="form-btn" type="submit">Отправить</button>
+                                <button class="form-btn" type="reset">Сбросить</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Список комментариев -->
+        <div class="comments-list">
+            <div class="comments-list__wrapper">
+                <ul class="comments">
+                    <li class="comments__item">
+                        <div class="comments__text-comment">
+                            <p>В Санкт-Петербурге я впервые и город настолько красив, что можно влюбиться с первого взгляда. Взяв обзорную экскурсию - не пожалела.
+                                Город старинный с очень красивой архитектурой, особенно понравились здания музеев, театров.</p>
+                        </div>
+                        <div class="comments__item-info">
+                            <div class="comment__item-photo-wrapper">
+                                <img src="%=static=%img/assets/comments-info/female-photo.png" class="comments__item-img" alt="">
+                            </div>
+                            <div class="comments__item-desc">
+                                <div class="comments__item-name">Екатерина</div>
+                                <div class="comments__item-meta">
+                                    <p class="comments__item-meta-subject">тема: <span class="comment-subject">Экскурсии</span></p>
+                                    <p class="comments__item-meta-pubdate">дата: <span class="comment-pubdate">05.05.2016</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="comments__item">
+                        <div class="comments__text-comment">
+                            <p>В Санкт-Петербурге я впервые и город настолько красив, что можно влюбиться с первого взгляда. Взяв обзорную экскурсию - не пожалела.
+                                Город старинный с очень красивой архитектурой, особенно понравились здания музеев, театров.</p>
+                        </div>
+                        <div class="comments__item-info">
+                            <div class="comment__item-photo-wrapper">
+                                <img src="%=static=%img/assets/comments-info/female-photo.png" class="comments__item-img" alt="">
+                            </div>
+                            <div class="comments__item-desc">
+                                <div class="comments__item-name">Екатерина</div>
+                                <div class="comments__item-meta">
+                                    <p class="comments__item-meta-subject">тема: <span class="comment-subject">Экскурсии</span></p>
+                                    <p class="comments__item-meta-pubdate">дата: <span class="comment-pubdate">05.05.2016</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
