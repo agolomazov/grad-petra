@@ -1,4 +1,4 @@
-.comments{
+.comments {
   width: 100%;
   min-height: 972px;
   background: url("%=static=%assets/comments-info/comments-preview-bg.jpg") no-repeat;
@@ -6,19 +6,19 @@
   padding: 149px 0 0 0;
 }
 
-.comments__wrapper{
+.comments__wrapper {
   max-width: 1280px;
   min-width: 320px;
   margin: 0 auto;
 }
 
-.comments__header{
+.comments__header {
   background: rgba(86, 116, 185, .27);
   padding: 90px 0;
   margin-bottom: 30px;
 }
 
-.comments__header-text{
+.comments__header-text {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
@@ -27,7 +27,7 @@
   position: relative;
 }
 
-.comments__header-text:after{
+.comments__header-text:after {
   content: '';
   display: block;
   width: 6%;
@@ -38,12 +38,12 @@
   bottom: -33px;
 }
 
-.comments__form-wrapper{
+.comments__form-wrapper {
   background: rgba(0, 0, 0, .8);
   margin-bottom: 30px;
 }
 
-.comments__form-inner-wrapper{
+.comments__form-inner-wrapper {
   padding: 65px 500px 30px 210px;
   background: url("%=static=%assets/comments-info/form-comment-bg.png") no-repeat;
   background-position: 85% 55%;
@@ -54,53 +54,53 @@
   margin: 0 10px 0 0;
 }
 
-.input-radio{
+.input-radio {
   margin: 0 5px 0 0;
   position: relative;
   top: 2px;
 }
 
-.comments-list{
+.comments-list {
   width: 100%;
   overflow: hidden;
 }
 
-.comments-list-items{
+.comments-list-items {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.comments__item{
+.comments__item {
   margin-bottom: 10px;
   overflow: hidden;
 }
 
-.comments__text-comment{
+.comments__text-comment {
   width: 75%;
   float: right;
   background: rgba(230, 230, 230, .9);
 }
 
-.text-comment__wrapper{
+.text-comment__wrapper {
   padding: 30px 60px;
   font-family: 'ClearSans-Italic';
   color: #000000;
-  
+
   & > p {
     padding: 0;
     margin: 0px 0px 10px 0;
   }
 }
 
-.comments__item-info{
+.comments__item-info {
   background: rgba(0, 0, 0, .8);
   width: 22%;
   overflow: hidden;
   display: table;
 }
 
-.comment__item-photo-wrapper{
+.comment__item-photo-wrapper {
   float: left;
   width: 35%;
   display: table-row;
@@ -109,33 +109,118 @@
   padding: 30px 0;
 }
 
-.comments__item-img{
+.comments__item-img {
   max-width: 40px;
   margin: auto;
 }
 
-.comments__item-desc{
+.comments__item-desc {
   width: 65%;
   float: right;
   display: table-row;
   padding: 30px 0;
 }
 
-.comments__item-name{
+.comments__item-name {
   color: #ffffff;
   font-family: 'FiraSans-Bold';
   font-size: 14px;
   margin-bottom: 15px;
 }
 
-.comments__item-name, .comments__item-meta{
+.comments__item-name, .comments__item-meta {
   padding: 0 15px 0 0;
 }
 
-.comments__item-meta-subject, .comments__item-meta-pubdate{
+.comments__item-meta-subject, .comments__item-meta-pubdate {
   color: #83d0f5;
   font-family: 'FiraSans-Italic';
   padding: 0;
   margin: 0;
   font-size: 14px;
+}
+
+.comment-subject{
+  text-transform: uppercase;
+}
+
+.comments__item-meta-subject{
+  word-wrap: break-word;
+}
+
+@media all and (max-width: 1180px) {
+
+  .comments__form-inner-wrapper {
+    padding: 65px 350px 30px 150px;
+  }
+
+  .comments-list__wrapper {
+    padding: 0 50px;
+  }
+}
+
+@media all and (max-width: 929px){
+  .comments{
+    padding: 0;
+  }
+}
+
+@media all and (max-width: 890px){
+  .comments__header {
+    padding: 40px 0;
+    margin-bottom: 0;
+  }
+
+  .comments__header-text:after {
+    bottom: -13px;
+  }
+
+  .comments__text-comment{
+    width: 100%;
+  }
+
+  .comments__item-info {
+    background: rgba(0, 0, 0, 0.8);
+    width: 46%;
+    overflow: hidden;
+    display: table;
+    float: right;
+    position: relative;
+    top: -10px;
+  }
+
+  .comments__form-inner-wrapper {
+    padding: 65px 150px 30px;
+  }
+
+  .form-field .pull-right{
+    text-align: left;
+  }
+}
+
+@media all and (max-width: 720px){
+  .comments__form-inner-wrapper {
+    padding: 65px 70px 30px;
+  } 
+}
+
+@media all and (max-width: 620px){
+  .comments__item-info{
+    width: 70%;
+  }
+
+  .comments__form-inner-wrapper {
+    padding: 65px 50px 30px;
+  }
+
+  .text-comment__wrapper{
+    padding: 30px;
+  }
+
+}
+
+@media all and (max-width: 533px){
+  .comments__item-info {
+    width: 100%;
+  }
 }
