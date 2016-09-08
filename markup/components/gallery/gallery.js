@@ -8,7 +8,7 @@ $(document).ready(function () {
             enable: true,
             effects: 'fade stagger(50ms)',
             duration: 600,
-            easing: 'ease',
-        },
+            easing: 'ease'
+        }
     });
 });

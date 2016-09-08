@@ -11,8 +11,8 @@ $(document).ready(function () {
         stopOnHover: true,
         itemsCustom: [
             [1280, 4],
-            [1024, 3],
-        ],
+            [1024, 3]
+        ]
     });
 
 
