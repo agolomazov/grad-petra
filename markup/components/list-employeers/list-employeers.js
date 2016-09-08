@@ -1,5 +1,5 @@
 $(document).ready(function () {
     $('.employeers-list').equalize({
-        target: '.employeer__item',
+        target: '.employeer__item'
     });
 });
