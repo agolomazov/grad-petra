@@ -1,1 +1,141 @@
+.comments{
+  width: 100%;
+  min-height: 972px;
+  background: url("%=static=%assets/comments-info/comments-preview-bg.jpg") no-repeat;
+  background-size: cover;
+  padding: 149px 0 0 0;
+}
 
+.comments__wrapper{
+  max-width: 1280px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.comments__header{
+  background: rgba(86, 116, 185, .27);
+  padding: 90px 0;
+  margin-bottom: 30px;
+}
+
+.comments__header-text{
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'ClearSans-Bold';
+  color: #ffffff;
+  position: relative;
+}
+
+.comments__header-text:after{
+  content: '';
+  display: block;
+  width: 6%;
+  height: 2px;
+  background: #000000;
+  position: absolute;
+  left: 47%;
+  bottom: -33px;
+}
+
+.comments__form-wrapper{
+  background: rgba(0, 0, 0, .8);
+  margin-bottom: 30px;
+}
+
+.comments__form-inner-wrapper{
+  padding: 65px 500px 30px 210px;
+  background: url("%=static=%assets/comments-info/form-comment-bg.png") no-repeat;
+  background-position: 85% 55%;
+}
+
+.input-label {
+  color: #fff;
+  margin: 0 10px 0 0;
+}
+
+.input-radio{
+  margin: 0 5px 0 0;
+  position: relative;
+  top: 2px;
+}
+
+.comments-list{
+  width: 100%;
+  overflow: hidden;
+}
+
+.comments-list-items{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comments__item{
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.comments__text-comment{
+  width: 75%;
+  float: right;
+  background: rgba(230, 230, 230, .9);
+}
+
+.text-comment__wrapper{
+  padding: 30px 60px;
+  font-family: 'ClearSans-Italic';
+  color: #000000;
+  
+  & > p {
+    padding: 0;
+    margin: 0px 0px 10px 0;
+  }
+}
+
+.comments__item-info{
+  background: rgba(0, 0, 0, .8);
+  width: 22%;
+  overflow: hidden;
+  display: table;
+}
+
+.comment__item-photo-wrapper{
+  float: left;
+  width: 35%;
+  display: table-row;
+  height: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.comments__item-img{
+  max-width: 40px;
+  margin: auto;
+}
+
+.comments__item-desc{
+  width: 65%;
+  float: right;
+  display: table-row;
+  padding: 30px 0;
+}
+
+.comments__item-name{
+  color: #ffffff;
+  font-family: 'FiraSans-Bold';
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.comments__item-name, .comments__item-meta{
+  padding: 0 15px 0 0;
+}
+
+.comments__item-meta-subject, .comments__item-meta-pubdate{
+  color: #83d0f5;
+  font-family: 'FiraSans-Italic';
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}

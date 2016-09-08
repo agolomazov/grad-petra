@@ -1,8 +1,8 @@
-<div class="commnets">
+<div class="comments">
     <div class="comments__wrapper">
         <!-- Заголовок страницы -->
         <div class="comments__header">
-            <div class="comments__header-text">Оизывы</div>
+            <div class="comments__header-text">Отзывы</div>
         </div>
 
         <!-- Форма для оставления отзывов -->
@@ -30,18 +30,18 @@
                     <div class="form-row">
                         <div class="form-field-3">
                             <label for="male" class="input-label">
-                                <input type="radio" name="sex" value="male" id="male"> M
+                                <input class="input-radio" type="radio" name="sex" value="male" id="male"> M
                             </label>
 
                             <label for="female" class="input-label">
-                                <input checked="checked" type="radio" name="sex" value="female" id="female"> Ж
+                                <input class="input-radio" checked="checked" type="radio" name="sex" value="female" id="female"> Ж
                             </label>
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-field-2">
-                            <textarea name="comment" id="comment" cols="30" rows="10" class="form-textarea"
+                            <textarea name="comment" id="comment" cols="30" rows="5" class="form-textarea"
                                       placeholder="Комментарий"></textarea>
                         </div>
 
@@ -59,11 +59,13 @@
         <!-- Список комментариев -->
         <div class="comments-list">
             <div class="comments-list__wrapper">
-                <ul class="comments">
+                <ul class="comments-list-items">
                     <li class="comments__item">
                         <div class="comments__text-comment">
+                            <div class="text-comment__wrapper">
                             <p>В Санкт-Петербурге я впервые и город настолько красив, что можно влюбиться с первого взгляда. Взяв обзорную экскурсию - не пожалела.
                                 Город старинный с очень красивой архитектурой, особенно понравились здания музеев, театров.</p>
+                            </div>
                         </div>
                         <div class="comments__item-info">
                             <div class="comment__item-photo-wrapper">
@@ -80,8 +82,10 @@
                     </li>
                     <li class="comments__item">
                         <div class="comments__text-comment">
-                            <p>В Санкт-Петербурге я впервые и город настолько красив, что можно влюбиться с первого взгляда. Взяв обзорную экскурсию - не пожалела.
-                                Город старинный с очень красивой архитектурой, особенно понравились здания музеев, театров.</p>
+                            <div class="text-comment__wrapper">
+                                <p>В Санкт-Петербурге я впервые и город настолько красив, что можно влюбиться с первого взгляда. Взяв обзорную экскурсию - не пожалела.
+                                    Город старинный с очень красивой архитектурой, особенно понравились здания музеев, театров.</p>
+                            </div>
                         </div>
                         <div class="comments__item-info">
                             <div class="comment__item-photo-wrapper">

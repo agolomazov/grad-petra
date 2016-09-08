@@ -96,7 +96,7 @@
   border-right: 8px solid transparent;
   border-top: 10px solid rgba(0, 0, 0, 0.8);
   position: absolute;
-  bottom: -7px;
+  bottom: -10px;
   z-index: 10;
   left: 45%;
 }
@@ -107,6 +107,7 @@
   margin-right: 30px;
   padding: 5px 0;
   display: block;
+  text-align: center;
 }
 
 .menu__link:hover{
@@ -117,6 +118,8 @@
 .dropdown-menu .menu__item {
   float: left;
   margin: 0;
+  font-size: 13px;
+  line-height: 2.5;
 }
 
 @media all and (max-width: 1180px){
@@ -246,6 +249,7 @@
     display: block;
     color: #666;
     width: 100%;
+    text-align: left;
   }
 
   .menu__link:hover{
