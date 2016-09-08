@@ -1,0 +1,143 @@
+.map-page{
+  width: 100%;
+  min-height: 780px;
+  padding: 149px 0 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+footer.page__footer.contact-footer{
+  margin: 0;
+  padding: 100px 0 0px;
+}
+
+.map-page__wrapper{
+  max-width: 1280px;
+  min-width: 320px;
+  margin: 60px auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 20;
+}
+
+.map-page__contact, .map-page__contact-form{
+  width: 43%;
+  float: right;
+  margin-bottom: 40px;
+  clear: both;
+}
+
+.map-page__contact{
+  background: rgba(255, 255, 255, .8);
+}
+
+.map-page__contact-wrapper{
+  padding: 25px 65px;
+}
+
+.map-page__contact-title{
+  font-family: 'FiraSans-Bold';
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.map-page__contact-text{
+  margin-bottom: 25px;
+  font-family: 'FiraSans-Regular';
+}
+
+.map__phone-number:hover{
+  text-decoration: underline;
+}
+
+.map-page__yandex-map{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.map-page__contact-form{
+  background: rgba(0, 0, 0, .8);
+}
+
+.contact-form__wrapper{
+  padding: 25px 55px;
+}
+
+.contact-form__title{
+  color: #ffffff;
+  font-family: 'FiraSans-Bold';
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+
+.map-page__contact-form .form-field{
+  width: 46%;
+}
+
+.map-page__contact-form .form-field-2{
+  width: 96%;
+}
+
+.map-page__contact-form .form-field.btn-container{
+  width: 97%;
+}
+
+.map-page__contact-form .form-field.btn-container .form-btn{
+  margin-left: 20px;
+}
+
+@media all and (max-width: 990px){
+
+  .map-page__wrapper{
+    margin: 120px auto 60px;
+  }
+
+  .map-page__contact, .map-page__contact-form{
+    width: 55%;
+    float: none;
+    margin: 0 auto 30px;
+  }
+}
+
+@media all and (max-width: 929px){
+  .map-page{
+    padding: 0;
+  }
+
+  .map-page__contact, .map-page__contact-form{
+    width: 80%;
+  }
+
+  .map-page__wrapper {
+    margin: 59px auto 60px;
+  }
+
+}
+
+@media all and (max-width: 620px){
+  .map-page__contact-form .form-field{
+    width: 97%;
+  }
+}
+
+@media all and (max-width: 540px){
+  .contact-form__wrapper {
+    padding: 25px;
+  }
+
+  .map-page__contact-form .form-field.btn-container .form-btn {
+    margin-left: 0;
+  }
+
+  .form-row {
+    margin-bottom: 0px;
+  }
+
+  .map-page__contact-wrapper{
+    padding: 25px;
+  }
+}

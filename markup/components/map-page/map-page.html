@@ -1,0 +1,63 @@
+<div class="map-page">
+    <!-- Обертка основного контента -->
+    <div class="map-page__wrapper">
+
+        <!-- Блок с контактами -->
+        <div class="map-page__contact">
+            <div class="map-page__contact-wrapper">
+                <div class="map-page__contact-title">Контактная информация</div>
+                <div class="map-page__contact-text">Санкт-Петербург, Невский проспект 22, этаж 4, офис 7</div>
+                <div class="map-page__contact-text">Мы с радостью поможем вам подобрать экскурсии и <br> ответим на все
+                    ваши
+                    вопросы:
+                </div>
+                <div class="map-page__contact-text">тел.: <b><a class="map__phone-number" href="tel:+7-812-334-18-48">8
+                    (812) 334-18-48</a></b> (Санкт-Петербург)<br>
+                    тел.: <b><a class="map__phone-number" href="tel:+7-800-333-70-48">8 (800) 333-70-48</a></b> (Россия,
+                    звонок бесплатный)
+                </div>
+                <div class="map__text">e-mail: <a href="mailto:admin@citycruises.ru"
+                                                  class="map__link">admin@citycruises.ru</a></div>
+            </div>
+        </div>
+
+        <!-- Блок с формой -->
+        <div class="map-page__contact-form">
+            <div class="contact-form__wrapper">
+                <div class="contact-form__title">Обратная связь</div>
+                <form action="" class="contact-form" method="post" enctype="application/x-www-form-urlencoded">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <input type="text" class="form-input" name="name" placeholder="Ваше имя *">
+                        </div>
+                        <div class="form-field">
+                            <input type="email" class="form-input" name="email" placeholder="Ваш email *">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <input type="text" class="form-input" name="phone" placeholder="Ваш телефон *">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field-2">
+                            <textarea name="comment" id="comment" class="form-textarea" rows="6" placeholder="Комментарий"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field btn-container">
+                            <div class="pull-right">
+                                <button class="form-btn" type="submit">Отправить</button>
+                                <button class="form-btn" type="reset">Сбросить</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+    <div id="map" class="map-page__yandex-map"></div>
+</div>
+
