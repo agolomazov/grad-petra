@@ -4,7 +4,7 @@
     display: block;
 }
 
-.owl-carousel:after {
+#owl-demo:after {
     content: "";
     display: block;
     position: absolute;
@@ -13,7 +13,6 @@
     width: 100%;
     position: absolute;
     bottom: 0px;
-    //z-index: 5;
 }
 
 
@@ -160,10 +159,6 @@
     filter: Alpha(Opacity=100);/*IE7 fix*/
     opacity: 1;
     text-decoration: none;
-}
-
-.owl-buttons {
-    display: none;
 }
 
 /* Styling Pagination*/
