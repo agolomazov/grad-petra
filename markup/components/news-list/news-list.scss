@@ -176,3 +176,9 @@
     width: 100%;
   }
 }
+
+@media all and (min-width: 320px) and (max-width: 480px){
+  .news-list__item-wrapper{
+    padding: 0;
+  }
+}

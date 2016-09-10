@@ -15,7 +15,7 @@
 
 .menu__item {
   float: left;
-  margin-right: 10px;
+  margin-right: 15px;
   margin-bottom: 20px;
   text-transform: uppercase;
   font-family: 'ClearSans';
@@ -43,19 +43,18 @@
   }
 }
 
-@media all and (min-width: 600px) and (max-width: 800px){
-  .menu {
-    width: 80%;
-  }
-}
 
-@media all and (min-width: 481px) and (max-width: 599px){
+@media all and (max-width: 930px){
   .menu {
     width: 80%;
   }
 }
 
 @media all and (min-width: 320px) and (max-width: 480px) {
+
+  .menu {
+    width: 75%;
+  }
 
   .bottom-menu {
     margin: 0 auto 20px;
@@ -65,5 +64,10 @@
   .menu__item {
     display: block;
     float: none;
+  }
+
+  .menu__item-link {
+    display: block;
+    width: 100%;
   }
 }

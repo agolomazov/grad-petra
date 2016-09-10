@@ -1,6 +1,3 @@
-.map {
-
-}
 .map__wrapper {
     max-width: 1280px;
     margin: 0 auto;
@@ -40,4 +37,10 @@
 .map__yandex-map{
     width: 100%;
     height: 420px;
+}
+
+@media all and (min-width: 320px) and (max-width: 480px){
+    .map__contact{
+        padding: 30px 40px;
+    }
 }

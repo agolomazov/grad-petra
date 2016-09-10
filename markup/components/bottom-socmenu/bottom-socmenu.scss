@@ -4,34 +4,64 @@
   display: block;
 }
 
-.sprite-facebook-white {
+.sprite-facebook-white:hover {
   width: 30px;
   height: 30px;
   background-position: -5px -5px;
 }
 
-.sprite-instagram-white {
+.sprite-facebook-white {
   width: 30px;
   height: 30px;
   background-position: -45px -5px;
 }
 
+.sprite-instagram-white:hover {
+  width: 30px;
+  height: 30px;
+  background-position: -85px -5px;
+}
+
+.sprite-instagram-white {
+  width: 30px;
+  height: 30px;
+  background-position: -5px -45px;
+}
+
+.sprite-mail-white:hover {
+  width: 28px;
+  height: 21px;
+  background-position: -45px -45px;
+}
+
 .sprite-mail-white {
   width: 28px;
   height: 21px;
-  background-position: -5px -45px;
+  background-position: -83px -45px;
+}
+
+.sprite-vk-white:hover {
+  width: 30px;
+  height: 30px;
+  background-position: -45px -76px;
 }
 
 .sprite-vk-white {
   width: 30px;
   height: 30px;
-  background-position: -43px -45px;
+  background-position: -85px -76px;
+}
+
+.sprite-whatsapp-white:hover {
+  width: 30px;
+  height: 30px;
+  background-position: -125px -5px;
 }
 
 .sprite-whatsapp-white {
   width: 30px;
   height: 30px;
-  background-position: -85px -5px;
+  background-position: -125px -45px;
 }
 
 .bottow-socmenu {
