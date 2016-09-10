@@ -23,5 +23,9 @@ $(document).ready(function () {
         owl.trigger('owl.next');
     });
 
+    $('.responses-list').equalize({
+        target: '.responses-list__item'
+    });
+
 });
 
