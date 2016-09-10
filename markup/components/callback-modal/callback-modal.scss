@@ -1,0 +1,36 @@
+.callback-modal {
+    display: none;
+    //background-color: #000000;
+}
+
+.callback-modal .form-btn {
+    width: 140px;
+}
+
+.callback-modal .contacts-form__contact-form-block {
+    background: transparent;
+}
+.callback-modal .contacts-form__contact-form-block-wrapper {
+    padding: 25px 60px;
+}
+
+.callback-modal .featherlight-close-icon {
+    top: 20px;
+    right: 20px;
+    color: #899699;
+    background: transparent;
+    border: 1px solid #899699;
+    width: 20px;
+    line-height: 20px;
+    border-radius: 3px;
+}
+
+
+
+.callback-modal:last-of-type {
+    background-color: rgba(0,0,0, 0.3);
+}
+
+.callback-modal .featherlight-content {
+    background-color: rgba(0, 0, 0, 0.6);
+}
