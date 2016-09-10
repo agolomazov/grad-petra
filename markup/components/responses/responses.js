@@ -1,26 +1,27 @@
 $(document).ready(function () {
-    let owl = $('.responses__list').owlCarousel({
-        items: 2,
+
+    let owl = $('.responses-list');
+    owl.owlCarousel({
+        items: 3,
         navigation: false,
         pagination: false,
-        responsiveClass: true,
+        rewindNav: true,
+        scrollPerPage: false,
+        autoPlay: 25000,
+        stopOnHover: true,
+        itemsDesktop: [1280, 3],
+        itemsDesktopSmall: [900, 2],
+        itemsTablet: [600, 1],
+        touchDrag: true
+    });
 
-        responsiveBaseWidth: '.responses__list',
-        itemsDesktop: [1199, 4],
-        itemsDesktopSmall: [1100, 3]
-    });
-    $('.responses').equalize({
-        target: ['.responses__item']
-    });
-    $('.responses__controls-prev').click(function () {
+    $('.prev-control').click(function () {
         owl.trigger('owl.prev');
     });
 
-    $('.responses__controls-next').click(function () {
+    $('.next-control').click(function () {
         owl.trigger('owl.next');
     });
-    let height = $('.responses__item').height();
-    console.log(height);
-    $('.responses__new').css('height: ' + height);
+
 });
 
