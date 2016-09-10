@@ -25,12 +25,15 @@
     border-radius: 3px;
 }
 
-
+.callback-modal .featherlight-close-icon:hover {
+    background: #899699;
+    color: #000000;
+}
 
 .callback-modal:last-of-type {
     background-color: rgba(0,0,0, 0.3);
 }
 
 .callback-modal .featherlight-content {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.9);
 }
