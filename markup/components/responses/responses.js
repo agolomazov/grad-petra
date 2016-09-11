@@ -27,5 +27,22 @@ $(document).ready(function () {
         target: '.responses-list__item'
     });
 
+    let windowWidth = $(window).width();
+
+    if (windowWidth > 780) {
+        $('.responses-list__wrapper').equalize({
+            target: '.response-block'
+        });
+    }
+
+    $(window).resize(function () {
+        let thisWidth = $(window).width();
+        if (thisWidth > 780) {
+            $('.responses-list__wrapper').equalize({
+                target: '.response-block'
+            });
+        }
+    });
+
 });
 
